@@ -3933,9 +3933,9 @@ display: none;
       <!-- user-provided yaml closeread style options -->
       <style>
 :root {
+--cr-narrative-background-color-overlay: #63B9C2;
 --cr-narrative-text-color-overlay: black;
 --cr-section-background-color: white;
---cr-narrative-background-color-overlay: #63B9C2;
 }
 </style>
     
@@ -4260,8 +4260,9 @@ Der Zeitaufwand ist etwas höher als bei herkömmlichen Darstellungen, reduziert
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Dieser Satz triggert das Sticky <span class="sc">@</span>cr<span class="sc">-</span>StickyID</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Diese Referenz kann an beliebiger Stelle im Text stehen, sollte jedoch durch Leerzeichen vom restlichen Inhalt getrennt sein.</p>
-<p>Wenn mehrere zusammenhängende Textblöcke (z.B. zwei Absätze) gemeinsam als ein Trigger fungieren sollen, können sie eingebettet werden:</p>
+<p>Normalerweise sind Trigger an ein Narrativ gekoppelt, also an einen erklärenden oder erzählenden Text.</p>
+<p>Der Trigger kann an beliebiger Stelle im Text stehen, sollte jedoch durch Leerzeichen vom restlichen Inhalt getrennt sein.</p>
+<p>Wenn mehrere zusammenhängende Textblöcke (z.B. zwei Absätze) als Einheit stehen und gemeinsam als ein Trigger fungieren sollen, können sie eingebettet werden:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span>{focus<span class="sc">-</span>on<span class="ot">=</span><span class="st">&quot;cr-StickyID&quot;</span>}</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Dieser Absatz und der folgende erscheinen als zusammenhängender Erzählblock</span>
@@ -4269,6 +4270,7 @@ Der Zeitaufwand ist etwas höher als bei herkömmlichen Darstellungen, reduziert
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>wird das Sticky <span class="st">&quot;cr-StickyID&quot;</span> eingeblendet.</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>Ein Narrativ kann auch ohne eigenen Trigger verwendet werden. In diesem Fall aktiviert es kein neues Sticky, sondern dient als zusätzliche Information zum zuvor getriggerten Sticky.</p>
 </section>
 <section id="layout" class="level2">
 <h2 class="anchored" data-anchor-id="layout">2.4 Layout</h2>
